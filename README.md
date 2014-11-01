@@ -1,6 +1,7 @@
 Nautilus-Status-Bar-Replacement
 ===============================
 (c) 2014 Brunomag Concept SRL
+
 www.brunomag.ro
 
 
@@ -11,9 +12,14 @@ Installation (on Ubuntu)
 You copy the extension file DiskUsageLocationWidget.py in one of the following directories: /usr/share/nautilus-python/extensions/ or  ~/.local/share/nautilus-python/extensions/
 
 In a terminal you kill nautilus with
+
 $ nautilus -q
 
+
 Afterwards you can relaunch it with
+
 $ nautilus --no-desktop
+
 or
+
 $ nautilus -n
