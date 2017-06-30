@@ -42,6 +42,8 @@ class DiskUsageLocationWidget(GObject.GObject, Nautilus.LocationWidgetProvider):
         return stat.f_bavail*stat.f_bsize
 
     def get_widget(self, uri, window):
+        if type(window).__name__ == "NautilusDesktopWindow" :
+            return None
         entry = Gtk.Entry()
         full_url = urlparse(uri)
         file_url = full_url.path
